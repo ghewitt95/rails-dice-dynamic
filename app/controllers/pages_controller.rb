@@ -1,25 +1,25 @@
 class PagesController < ApplicationController
   def home
-    render({ template: "dice_templates/home"})
+    render({ template: "dice/home"})
   end
 
   def two_six
 
-    render({ template: "dice_templates/2d6"})
+    render({ template: "dice/two/six"})
   end
 
   def two_ten
     
-    render({ template: "dice_templates/2d10"})
+    render({ template: "dice/two/ten"})
   end
 
   def one_twenty
     
-    render({ template: "dice_templates/1d20"})
+    render({ template: "dice/one/twenty"})
   end
 
   def five_four
     
-    render({ template: "dice_templates/5_4"})
+    render({ template: "dice/five/four"})
   end
 end

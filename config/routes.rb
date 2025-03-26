@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
-  get("/", {:controller => "pages", :action => "home")
+  get("/", {:controller => "pages", :action => "home"})
 
-  get("2d6", {:controller => "pages", :action => "two_six") 
+  get("two/six", {:controller => "pages", :action => "two_six"})
 
-  get("2d10", {:controller => "pages", :action => "two_ten")
+  get("two/ten", {:controller => "pages", :action => "two_ten"})
 
-  get("1d20", {:controller => "pages", :action => "one_twenty")
+  get("one/twenty", {:controller => "pages", :action => "one_twenty"})
 
-  get("5d4", {:controller => "pages", :action => "five_four")
+  get("five/four", {:controller => "pages", :action => "five_four"})
 
 end
+
+
+
