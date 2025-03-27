@@ -16,12 +16,12 @@
 
   <body>
     <div class="navbar">
-      <div><a href="/">Home</a></div>
-      <div><a href=" <%= url_for(controller: "pages", action: "two_six")%> ">2d6</a></div>
-      <div><a href=" <%= url_for(controller: "pages", action: "two_ten")%> ">2d10</a></div>
-      <div><a href=" <%= url_for(controller: "pages", action: "one_twenty")%> ">1d20</a></div>
-      <div><a href=" <%= url_for(controller: "pages", action: "five_four")%> ">5d4</a></div>
-    </div>
+  <div><a href="/">Home</a></div>
+  <div><a href="<%= url_for(controller: "pages", action: "roll_dice", num: 2, sides: 6) %>">2d6</a></div>
+  <div><a href="<%= url_for(controller: "pages", action: "roll_dice", num: 2, sides: 10) %>">2d10</a></div>
+  <div><a href="<%= url_for(controller: "pages", action: "roll_dice", num: 1, sides: 20) %>">1d20</a></div>
+  <div><a href="<%= url_for(controller: "pages", action: "roll_dice", num: 5, sides: 4) %>">5d4</a></div>
+</div>
 
     <%= yield %>
 
